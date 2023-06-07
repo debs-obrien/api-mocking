@@ -15,7 +15,7 @@ test.describe('mock and modify', () => {
       };
       await route.fulfill({ json });
     });
-    await page.goto('localhost:3003');
+    await page.goto('localhost:3000');
     
     await expect(page.locator('div').filter({ hasText: 'Playwright' })).toBeVisible();
   });
